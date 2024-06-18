@@ -3,7 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-//import Inicio from './pages/inicio/inicio.js';
+
+import Inicio from './pages/inicio/inicio.js';
 
 import CadastrarBovino from './pages/bovinos/cadastrarBovino.js';
 //import EditarBovino from './pages/bovinos/editarBovino.js';
@@ -26,10 +27,10 @@ function App() {
 
     <Router>
       <Routes>
-        {/*<Route path="/" element={ <Inicio /> } />
+        <Route path="/" element={ <Inicio /> } />
 
-        <Route path="/bovinos" element={ <ListarBovino /> } />*/}
-        <Route path="/" element={ <CadastrarBovino /> } />
+        {/*<Route path="/bovinos" element={ <ListarBovino /> } />*/}
+        <Route path="/bovinos/cadastrarBovino/" element={ <CadastrarBovino /> } />
         {/*<Route path="/bovinos/editarBovino/:id" element={ <EditarBovino /> } />
         <Route path="/bovinos/telaListagemCarteira" element={<TelaListarCarteiraBovino />} />
         <Route path="/bovinos/carteiraVacinacao" element={<CarteiraVacinacaoBovino />} />
