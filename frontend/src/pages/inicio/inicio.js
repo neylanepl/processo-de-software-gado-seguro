@@ -29,7 +29,7 @@ const Inicio = () => {
                 className="btn btn-success"
                 style={{ backgroundColor: "#83A93A", borderColor: "#6D3B00", width: "auto" }}
                 onClick={redirectToBovinoHome}>
-                Bovinos
+                Quantitativos ou graficos
               </button>
             </Col>
           </Row>
