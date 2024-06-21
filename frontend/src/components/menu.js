@@ -45,7 +45,7 @@ const Menu = () => {
                 </button>
                 <div className="collapse" id="bovino-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" style={{paddingLeft: "48px"}}>
-                    <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Listar</a></li>
+                    <li><a href="/bovinos/" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Listar</a></li>
                     <li><a href="/bovinos/cadastrarBovino/" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Cadastrar</a></li>
                   </ul>
                 </div>
@@ -56,8 +56,8 @@ const Menu = () => {
                 </button>
                 <div className="collapse" id="vacina-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" style={{paddingLeft: "48px"}}>
-                    <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Listar vacinas</a></li>
-                    <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Cadastrar vacina</a></li>
+                    <li><a href="/vacinas/" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Listar</a></li>
+                    <li><a href="/vacinacao/cadastrarVacina" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Cadastrar</a></li>
                     <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Realizar aplicação</a></li>
                     <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded"></a>Carteiras de vacinação</li>
                   </ul>

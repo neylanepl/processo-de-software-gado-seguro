@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { Form } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
 //import gadoSeguro from '../../services/connectionGadoSeguro';
 
 import Base from '../base/base';
-import { Form } from 'react-bootstrap';
-import { ToastContainer, toast } from 'react-toastify';
+import BotoesCadastrarVoltar from '../../components/butoesCadastrarVoltar';
 
 
 const CadastrarBovino = () => {
-    const handleGoBack = () => {
-      window.history.back();
-    };
-
+    
     const [fazendas, setFazendas] = useState([]);
 
     useEffect(() => {
@@ -150,9 +147,7 @@ const CadastrarBovino = () => {
                     borderRadius: "1em" }}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlNome">
                     <Form.Label style={{ fontWeight: "bold" }}>Nome</Form.Label>
-                    <Form.Control type="name" required 
-                        
-                        onChange={e => setNomeForm(e.target.value)} />
+                    <Form.Control type="name" required onChange={e => setNomeForm(e.target.value)} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlBovino">
                     <Form.Label style={{ fontWeight: "bold" }}>Id do Bovino</Form.Label>
@@ -320,14 +315,7 @@ const CadastrarBovino = () => {
                   </Form.Select>
                 </Form.Group>
                 <Form.Group className="d-flex flex-column align-items-center">
-                    <button type="submit" value="submit" className="btn"
-                        style={{ backgroundColor: "#83A93A",color: "#ffffff", margin: "30px 0px 0 0" , width: "300px"}}>
-                        Cadastrar
-                    </button>
-                    <button className="btn" style={{ backgroundColor: "#9F9F9F", color: "#ffffff", margin: "30px 0px 0 0", width: "300px" }}
-                    onClick={handleGoBack}>
-                        Voltar
-                    </button>
+                    <BotoesCadastrarVoltar/>
                     <ToastContainer />
                 </Form.Group>
             </Form>
