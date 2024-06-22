@@ -8,14 +8,13 @@ import Inicio from './pages/inicio/inicio.js';
 
 import CadastrarBovino from './pages/bovinos/cadastrarBovino.js';
 import ListarBovinos from './pages/bovinos/listarBovinos.js';
-//import TelaListarCarteiraBovino from './pages/bovinos/telaListagemCarteira.js';
-//import CarteiraVacinacaoBovino from './pages/bovinos/carteiraVacinacao.js';
 
 import CadastrarVacina from './pages/vacinacao/cadastrarVacina.js';
 import ListarVacinas from './pages/vacinacao/listarVacinas.js';
 
-//import CadastrarDose from './pages/dose/cadastrarDose.js';
-//import ListarDose from './pages/dose/listarDose.js';
+import CadastrarAplicacao from './pages/aplicacao/cadastrarAplicacao.js';
+import ListarCarteirasVacinacao from './pages/aplicacao/listarCarteirasVacinacao.js';
+import CarteiraVacinacao from './pages/aplicacao/carteiraVacinacao.js';
 
 
 
@@ -28,15 +27,13 @@ function App() {
 
         <Route path="/bovinos" element={ <ListarBovinos /> } />
         <Route path="/bovinos/cadastrarBovino/" element={ <CadastrarBovino /> } />
-        {/*
-        <Route path="/bovinos/telaListagemCarteira" element={<TelaListarCarteiraBovino />} />
-        <Route path="/bovinos/carteiraVacinacao" element={<CarteiraVacinacaoBovino />} />*/}
 
         <Route path="/vacinas" element={ <ListarVacinas /> } />
         <Route path="/vacinacao/cadastrarVacina" element={ <CadastrarVacina /> } />
         
-        {/*<Route path="/doses" element={ <ListarDose /> } />
-        <Route path="/doses/cadastrarDose" element={ <CadastrarDose /> } />*/}
+        <Route path="/aplicacao/cadastrarAplicacao" element={ <CadastrarAplicacao /> } />
+        <Route path="/aplicacao/listarCarteirasVacinacao" element={<ListarCarteirasVacinacao />} />
+        <Route path="/aplicacao/carteiraVacinacao/:idBovino" element={<CarteiraVacinacao />} />
 
       </Routes>
       <ToastContainer />

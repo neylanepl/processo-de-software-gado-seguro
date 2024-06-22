@@ -7,9 +7,13 @@ import BtnGreen from '../../components/buttongreen';
 //import gadoSeguro from '../../services/connectionGadoSeguro';
 
 const ListarBovinos = () => {
-
-    const [bovinos, setBovinos] = useState([]);
     const navigate = useNavigate();
+
+    const bovino = [
+        { id: 1, nome: 'Mimoso', peso: '400', data_nascimento: '24/05/2016', sexo: 'Macho', reprodutor: 1, cor: 'Amarelo', chifre: 0 },
+    ];
+    const [bovinos, setBovinos] = useState([]);
+    
 
     function formatDateToString(date) {
         if (date instanceof Date && !isNaN(date)) {
@@ -56,7 +60,7 @@ const ListarBovinos = () => {
                     />
                 </div>
         
-                <table className="table table-bordered" >
+                <table className="table table-bordered align-middle" >
                     <thead className="text-center" style={{ backgroundColor: "#E0E7CA" }}>
                         <tr>
                             <th scope="col" style={{ backgroundColor: "#E0E7CA" }}>Nome</th>
@@ -70,9 +74,9 @@ const ListarBovinos = () => {
                         </tr>
                     </thead>
 
-                    <tbody className="tabelaListagem text-center" >
+                    <tbody className="text-center" >
 
-                        {bovinos.map(bovino => (
+                        {bovino.map(bovino => (
                             <tr key={bovino.idBovino}>
                                 <td>{bovino.nome}</td>
                                 <td>{bovino.peso}</td>

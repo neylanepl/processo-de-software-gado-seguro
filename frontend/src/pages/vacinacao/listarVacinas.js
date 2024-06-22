@@ -7,9 +7,14 @@ import Base from '../base/base';
 import BtnGreen from '../../components/buttongreen';
 
 const ListarVacinas = () => {
+    const navigate = useNavigate();
+
+    const vacina = [
+        { id: 1, nome_vacina: 'Aftosa', fabricante: 'VetFarma', info: 'Aplicar no musculo'},
+    ];
 
     const [vacinas, setVacinas] = useState([]);
-    const navigate = useNavigate();
+    
 
     useEffect(() => {
         const fetchVacinas = async () => {
@@ -44,8 +49,8 @@ const ListarVacinas = () => {
                     />
                 </div>
 
-                <table className="table table-bordered" >
-                    <thead style={{ backgroundColor: "#E0E7CA" }}>
+                <table className="table table-bordered align-middle" >
+                    <thead className="text-center" style={{ backgroundColor: "#E0E7CA" }}>
                         <tr>
                             <th style={{ backgroundColor: "#E0E7CA" }} scope="col" >Nome</th>
                             <th style={{ backgroundColor: "#E0E7CA" }} scope="col" >Fabricante</th>
@@ -54,8 +59,8 @@ const ListarVacinas = () => {
                         </tr>
                     </thead>
                     <tbody className="text-center" >
-                    {vacinas.map(vacina => (
-                            <tr key={vacina.nome_vacina}>
+                    {vacina.map(vacina => (
+                            <tr key={vacina.nome_vacina} >
                                 <td>{vacina.nome_vacina}</td>
                                 <td>{vacina.fabricante}</td>
                                 <td>{vacina.info}</td>

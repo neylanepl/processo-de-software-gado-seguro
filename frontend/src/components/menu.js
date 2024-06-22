@@ -57,9 +57,9 @@ const Menu = () => {
                 <div className="collapse" id="vacina-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" style={{paddingLeft: "48px"}}>
                     <li><a href="/vacinas/" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Listar</a></li>
-                    <li><a href="/vacinacao/cadastrarVacina" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Cadastrar</a></li>
-                    <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Realizar aplicação</a></li>
-                    <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded"></a>Carteiras de vacinação</li>
+                    <li><a href="/vacinacao/cadastrarVacina/" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Cadastrar</a></li>
+                    <li><a href="/aplicacao/cadastrarAplicacao/" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Realizar aplicação</a></li>
+                    <li><a href="/aplicacao/listarCarteirasVacinacao/" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Carteiras de vacinação</a></li>
                   </ul>
                 </div>
               </li>
