@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
-import Inicio from './pages/inicio/inicio.js';
+import DashboardGeral from './pages/dashboard/dashboardGeral.js';
+import DashboardVacinacao from './pages/dashboard/dashboardVacinacao.js';
 
 import CadastrarBovino from './pages/bovinos/cadastrarBovino.js';
 import ListarBovinos from './pages/bovinos/listarBovinos.js';
@@ -23,7 +24,8 @@ function App() {
 
     <Router>
       <Routes>
-        <Route path="/" element={ <Inicio /> } />
+        <Route path="/" element={ <DashboardGeral /> } />
+        <Route path="/dashboardVacinacao" element={ <DashboardVacinacao /> } />
 
         <Route path="/bovinos" element={ <ListarBovinos /> } />
         <Route path="/bovinos/cadastrarBovino/" element={ <CadastrarBovino /> } />

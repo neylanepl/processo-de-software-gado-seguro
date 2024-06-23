@@ -35,7 +35,7 @@ const Menu = () => {
                 <div className="collapse" id="dash-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" style={{paddingLeft: "48px"}}>
                     <li><a href="/" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Geral</a></li>
-                    <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Bovinos vacinados</a></li>
+                    <li><a href="/dashboardVacinacao" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Vacinação</a></li>
                   </ul>
                 </div>
               </li>
