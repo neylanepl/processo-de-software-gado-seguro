@@ -136,7 +136,7 @@ const CadastrarBovino = () => {
     }
 
     // Navegar para outra página após o envio do formulário
-    navigate('/');
+    navigate('/bovinos');
   };
 
   return (

@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 //import gadoSeguro from '../../services/connectionGadoSeguro';
 
 import Base from '../base/base';
-import BotoesCadastrarVoltar from '../../components/butoesCadastrarVoltar';
+import BotaoCadastrar from '../../components/botaoCadastrar';
 
 const CadastrarAplicacao = () => {
 
@@ -56,6 +56,7 @@ const CadastrarAplicacao = () => {
         e.preventDefault();
         const payloadDose = {
             nome_vacina: nomeForm,
+            idBovino: bovinoForm,
             lote: loteForm,
             info: infoForm,
             data_aplicada: dataAplicadaForm,
@@ -69,7 +70,7 @@ const CadastrarAplicacao = () => {
         }
 
         // Navegar para outra página após o envio do formulário
-        navigate('/');
+        navigate('/aplicacao/carteiraVacinacao/'+ bovinoForm);
     };
 
 
@@ -124,7 +125,7 @@ const CadastrarAplicacao = () => {
                 </Form.Group>
                 
                 <Form.Group className="d-flex flex-column align-items-center">
-                    <BotoesCadastrarVoltar/>
+                    <BotaoCadastrar/>
                     <ToastContainer />
                 </Form.Group>
             </Form>

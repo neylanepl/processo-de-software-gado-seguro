@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import Base from '../base/base';
+import BotaoVoltar from '../../components/botaoVoltar';
 
 const CarteiraVacinacao = () => {
     const navigate = useNavigate();
@@ -57,7 +58,7 @@ const CarteiraVacinacao = () => {
                     ))}
                     </tbody>
                 </table>
-           
+                <div className="d-flex flex-column align-items-center"><BotaoVoltar/></div>
         </Base>
     );
 };

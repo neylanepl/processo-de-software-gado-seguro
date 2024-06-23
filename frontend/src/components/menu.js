@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IoIosNotifications, IoIosMenu } from "react-icons/io";
 import { FaAngleDown, FaAngleRight } from "react-icons/fa";
+import { BsExclamationTriangleFill } from "react-icons/bs";
+
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -70,9 +72,15 @@ const Menu = () => {
         <h5 style={{ color: "#263900", margin: "0px" }}>GadoSeguro</h5>
       </div>
       <div className="d-flex align-items-center">
-        <button className="btn">
+      <div class="dropdown">
+        <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           <IoIosNotifications style={{ color: "#263900", height: "20px", width: "20px" }} />
         </button>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style={{minWidth: "220px"}}>
+          <li><a style={{ whiteSpace: 'normal' }} class="dropdown-item" href="#"><BsExclamationTriangleFill style={{color: "red", marginRight: "8px", marginBottom: "2px"}}/>Amanhã o bovino Amarelinha precisa tomar a 2° dose da aftosa.</a></li>
+        </ul>
+      </div>
         <button
           className="btn"
           style={{
