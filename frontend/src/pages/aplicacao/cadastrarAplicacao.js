@@ -75,7 +75,7 @@ const CadastrarAplicacao = () => {
 
 
     return (
-    <Base title={"Cadastrar de Aplicação"}>
+    <Base title={"Cadastrar Aplicação"}>
       <Form onSubmit={e => { handleSubmitForm(e) }}
                 style={{margin: "0 auto", backgroundColor: "#E0E7CA", minWidth: "500px",
                 maxWidth: "800px", marginBottom: "10%", padding: "2em 3em 2em 3em",

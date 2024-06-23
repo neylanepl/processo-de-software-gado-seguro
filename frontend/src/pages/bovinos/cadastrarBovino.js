@@ -140,7 +140,7 @@ const CadastrarBovino = () => {
   };
 
   return (
-    <Base title={"Cadastro de Bovino"}>
+    <Base title={"Cadastrar Bovino"}>
       <Form onSubmit={e => { handleSubmitForm(e) }}
                 style={{margin: "0 auto", backgroundColor: "#E0E7CA", minWidth: "500px",
                 maxWidth: "800px", marginBottom: "10%", padding: "2em 3em 2em 3em",
