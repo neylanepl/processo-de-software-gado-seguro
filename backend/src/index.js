@@ -1,6 +1,11 @@
 const express = require('express')
 const cors = require('cors');
 
+const routesDose = require('./routes/doseRoutes')
+const routesBovino = require('./routes/bovinoRoutes')
+const routesVacina = require('./api/routes/vacinaRoutes')
+const routeCarteiras = require('./api/routes/carteirasRoutes')
+
 const app = express();
 const port = 3001;
 
@@ -16,6 +21,11 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Headers", req.header('access-control-request-headers'));
     next();
 });
+
+app.use(routesDose)
+app.use(routesBovino)
+app.use(routesVacina)
+app.use(routeCarteiras)
 
 app.listen(port, () => {
     console.log('Servidor rodando na porta ', port)
